@@ -1,0 +1,42 @@
+header{ 
+    display: grid;
+    grid-template: 
+    "uplanding" 40px
+    "dowlanding" 100%;    
+}
+#uplanding{ 
+    grid-area: uplanding;
+    display: grid;
+    grid-template: 
+    "iconomapa cuenta carrito" /6fr 1fr 1fr;   
+}
+#iconomapa{ 
+    grid-area: iconomapa;
+    background-color: rgb(5, 224, 5)
+}
+#cuenta{ 
+    grid-area: cuenta;
+    background-color: rgb(0, 139, 0);
+}
+#carrito{ 
+    grid-area: carrito;
+    background-color: rgb(0, 90, 0);
+}
+#dowlanding{ 
+    grid-area: dowlanding;
+    display: grid;
+    grid-template: 
+    "logo buscador botoncomenzar" / 1fr 6fr 1fr;       
+}
+#logo{ 
+    grid-area: logo;
+    background-color: blueviolet;
+}
+#buscador{ 
+    grid-area:buscador;
+    background-color: rgb(71, 7, 131);
+}
+#botoncomenzar{ 
+    grid-area:botoncomenzar;
+    background-color: rgb(23, 2, 43);
+}
