@@ -11,9 +11,9 @@
     "footer" 200px;    
 }
 .landing{ 
-    grid-area: landing;
-    background-color: red;        
+    grid-area: landing;  
 }
+
 header{ 
     grid-area:header;
     background-color: green;
