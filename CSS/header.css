@@ -2,41 +2,50 @@ header{
     display: grid;
     grid-template: 
     "uplanding" 40px
-    "dowlanding" 100%;    
+    "dowlanding" 160px;    
 }
 #uplanding{ 
     grid-area: uplanding;
     display: grid;
     grid-template: 
-    "iconomapa cuenta carrito" /6fr 1fr 1fr;   
+    "iconomapa cuenta carrito" /6fr 1fr 1fr; 
+    border-bottom: 1px solid; 
+    border-color: #c1c7cd;  
+
+}
+#iconomapa,#cuenta,#carrito{ 
+    display: flex;
+    align-items: center;
+    
 }
 #iconomapa{ 
     grid-area: iconomapa;
-    
+    padding-left: 100px;
 }
 #cuenta{ 
-    grid-area: cuenta;
-    
+    grid-area: cuenta;  
 }
 #carrito{ 
-    grid-area: carrito;
-    
+    grid-area: carrito;  
 }
 #dowlanding{ 
     grid-area: dowlanding;
     display: grid;
     grid-template: 
-    "logo buscador botoncomenzar" / 1fr 6fr 1fr;       
+    "logo buscador botoncomenzar" / 150px 6fr 1fr;       
 }
 #logo{ 
     grid-area: logo;
-    background-color: blueviolet;
+    background-image: url(../imagenes/logo.svg);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #buscador{ 
     grid-area:buscador;
-    background-color: rgb(71, 7, 131);
+
 }
 #botoncomenzar{ 
     grid-area:botoncomenzar;
-    background-color: rgb(23, 2, 43);
+
 }

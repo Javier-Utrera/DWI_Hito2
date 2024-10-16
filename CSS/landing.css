@@ -3,17 +3,14 @@
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
-#giratorio{ 
-    background-image: url(../imagenes/landtransparente.png);
-    width: 700px;
-    height: 700px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+#logogiratorio{ 
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
     transition: transform 30s linear;
 }
-.landing:hover #giratorio{transform: rotate(60deg) }
+.landing:hover #logogiratorio{transform: rotate(60deg) }
