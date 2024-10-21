@@ -1,16 +1,9 @@
-.landing{  
-    background-image: url(../imagenes/Cloudy.svg);
+.landing {
+    background-image: url(../imagenes/landing\ final.svg);
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: left;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#logogiratorio{ 
-    max-width: 70%;
-    max-height: 70%;
-    object-fit: contain;
-    transition: transform 30s linear;
-}
-.landing:hover #logogiratorio{transform: rotate(60deg) }

@@ -1,53 +1,69 @@
-*{ 
+* {
     margin: 0px;
 }
-.cuerpo{ 
+
+.cuerpo {
     display: grid;
-    grid-template: 
-    "landing" 100vh
-    "header" 200px
-    "nav" 50px
-    "section"
-    "footer" 200px;    
-}
-.landing{ 
-    grid-area: landing;  
+    grid-template:
+        "landing" 100vh
+        "header" 200px
+        "nav" 50px
+        "section"
+        "footer" 200px;
 }
 
-header{ 
-    grid-area:header;
+.landing {
+    grid-area: landing;
 }
-nav{ 
-    grid-area:nav;
-    background-color: aqua;
+
+header {
+    grid-area: header;
+    top: 0px;
 }
-section{ 
+
+nav {
+    grid-area: nav;
+    top: 200px;
+}
+
+header,
+nav {
+    position: sticky;
+}
+
+section {
+    padding-top: 10px;
     grid-area: section;
     display: grid;
     gap: 10px;
     grid-template:
-    "destinos" 700px
-    "servicios" 700px
-    "equipo" 700px
-    "testimonios" 700px;
+        "destinos" 700px
+        "servicios" 700px
+        "equipo" 700px
+        "testimonios" 700px;
 }
-#destinos{ 
+
+#destinos {
     grid-area: destinos;
     background-color: yellow;
 }
-#servicios{ 
+
+#servicios {
     grid-area: servicios;
-    background-color: rgb(190, 228, 20);    
+    background-color: rgb(190, 228, 20);
 }
-#equipo{ 
+
+#equipo {
     grid-area: equipo;
     background-color: rgb(185, 185, 4);
 }
-#testimonios{ 
+
+#testimonios {
     grid-area: testimonios;
     background-color: rgb(141, 141, 4);
 }
-footer{ 
-    grid-area:footer;
+
+footer {
+    grid-area: footer;
     background-color: blueviolet;
 }
