@@ -1,9 +1,23 @@
 .landing {
-    background-image: url(../imagenes/landing\ final.svg);
+    background-image: url(../imagenes/b.jpg);
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
     background-size: cover;
-    display: flex;
     align-items: center;
     justify-content: center;
+    
 }
+/*
+Verde Bosque (#4A7C30)
+Texto: Blanco (#FFFFFF)
+
+Marrón Tierra (#8B5B29)
+Texto: Crema (#F5F5DC)
+
+Gris Piedra (#A7A8AA)
+Texto: Negro (#000000)
+
+Dorado Élfico (#E6C47A)
+
+Texto: Marrón Oscuro (#4B3D26)
+*/

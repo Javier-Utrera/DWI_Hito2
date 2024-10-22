@@ -1,28 +1,30 @@
 nav {
-    background-color: #4682A3;
     display: grid;
     grid-template:
-        "blog viajes mapa tienda idioma" /1fr 1fr 1fr 1fr 7fr;
+        "blog viajes mapa tienda cuenta carrito idioma" /1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     padding-left: 50px;
     padding-right: 50px;
+    border-bottom: 1px solid #A7A8AA;
+    background-color: #705a37ce;
 }
 
 .menu {
     position: relative;
 }
 
-.menu a {
-    font-weight: bold;
+.menu a,span {
     text-decoration: none;
-    color: white;
+    color: #F5F5DC;
+    display: block; 
+    padding: 10px;
 }
 
 .submenu {
     display: none;
     position: absolute;
-    top: 40px;
-    left: 0;
-    background-color: #4682A3;
+    top: 100%;
+    left: 40%;
+    background-color: #5c4a2c;
     z-index: 1;
     min-width: 150px;
     padding: 10px 0;
@@ -46,7 +48,10 @@ nav {
 #blog,
 #viajes,
 #mapa,
-#tienda {
+#tienda,
+#cuenta,
+#carrito,
+#idioma {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,4 +75,15 @@ nav {
 
 #idioma {
     grid-area: idioma;
+}
+#iconomapa {
+    grid-area: iconomapa;
+}
+
+#cuenta {
+    grid-area: cuenta;
+}
+
+#carrito {
+    grid-area: carrito;
 }

@@ -4,31 +4,35 @@
 
 .cuerpo {
     display: grid;
-    grid-template:
-        "landing" 100vh
-        "header" 200px
-        "nav" 50px
+    grid-template-areas:
+        "header"
+        "nav"
+        "landing"
         "section"
-        "footer" 200px;
+        "footer";
+    grid-template-rows: 120px 50px 500px auto 200px;
 }
 
 .landing {
-    grid-area: landing;
+    grid-area: landing; 
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    right: 0px;
+    height: 550px;
+    z-index: -1;
 }
 
 header {
     grid-area: header;
-    top: 0px;
+    position: sticky;
+    top: 0;
 }
 
 nav {
     grid-area: nav;
-    top: 200px;
-}
-
-header,
-nav {
     position: sticky;
+    top: 160px;
 }
 
 section {
@@ -36,34 +40,31 @@ section {
     grid-area: section;
     display: grid;
     gap: 10px;
-    grid-template:
-        "destinos" 700px
-        "servicios" 700px
-        "equipo" 700px
-        "testimonios" 700px;
+    grid-template-areas:
+        "destinos"
+        "servicios"
+        "equipo"
+        "testimonios";
+    grid-template-rows: repeat(4,800px);
 }
 
 #destinos {
     grid-area: destinos;
-    background-color: yellow;
+
 }
 
 #servicios {
     grid-area: servicios;
-    background-color: rgb(190, 228, 20);
 }
 
 #equipo {
     grid-area: equipo;
-    background-color: rgb(185, 185, 4);
 }
 
 #testimonios {
     grid-area: testimonios;
-    background-color: rgb(141, 141, 4);
 }
 
 footer {
     grid-area: footer;
-    background-color: blueviolet;
 }
