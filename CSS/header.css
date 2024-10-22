@@ -1,13 +1,7 @@
 header {
     display: grid;
-    grid-template:
-        "dowlanding" 160px;     
-}
-#dowlanding {
-    grid-area: dowlanding;
-    display: grid;
-    grid-template:
-        "logo buscador" / 150px;
+    grid-template-columns: 10% auto;
+    grid-template-areas: "logo buscador";
     background-image: url(../imagenes/maptexture1.svg);
     background-size:contain;
     background-color: #E6C47A;
@@ -18,9 +12,11 @@ header {
 #logo {
     grid-area: logo;
     background-image: url(../imagenes/logo.svg);
-    background-size: 70%;
+    background-size: 60%;
+    max-width: 120px;
+    min-width: 70px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; 
 }
 
 #buscador {

@@ -1,16 +1,9 @@
-@media (max-width: 600px) {
+@media (max-width: 720px) {
     #buscador {
         grid-template:
             "origen destino"
             "viajeros raza"
             "botoncomenzar botoncomenzar";
-    }
-
-    #dowlanding {
-        grid-area: dowlanding;
-        display: grid;
-        grid-template:
-            "logo buscador" / 100px;
     }
 
     #destino {
@@ -36,5 +29,4 @@
     #botoncomenzar {
         height: 30px;
     }
-
 }
