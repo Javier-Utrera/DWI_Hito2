@@ -1,0 +1,73 @@
+nav {
+    background-color: #4682A3;
+    display: grid;
+    grid-template:
+        "blog viajes mapa tienda idioma" /1fr 1fr 1fr 1fr 7fr;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.menu {
+    position: relative;
+}
+
+.menu a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #4682A3;
+    z-index: 1;
+    min-width: 150px;
+    padding: 10px 0;
+    border-radius: 4px;
+}
+
+.submenu a {
+    font-weight: bold;
+    padding: 8px 12px;
+    white-space: nowrap;
+    display: block;
+    margin: 5px 0;
+    color: white;
+    text-decoration: none;
+}
+
+.menu:hover .submenu {
+    display: block;
+}
+
+#blog,
+#viajes,
+#mapa,
+#tienda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#blog {
+    grid-area: blog;
+}
+
+#viajes {
+    grid-area: viajes;
+}
+
+#mapa {
+    grid-area: mapa;
+}
+
+#tienda {
+    grid-area: tienda;
+}
+
+#idioma {
+    grid-area: idioma;
+}

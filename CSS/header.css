@@ -1,0 +1,64 @@
+header {
+    display: grid;
+    grid-template:
+        "uplanding" 40px
+        "dowlanding" 160px;
+    background-color: white;
+}
+
+#uplanding {
+    grid-area: uplanding;
+    display: grid;
+    grid-template:
+        "iconomapa cuenta carrito" /4fr 1fr 1fr;
+    border-bottom: 1px solid;
+    border-color: #d7b740;
+}
+
+#iconomapa,
+#cuenta,
+#carrito {
+    display: flex;
+    align-items: center;
+}
+
+#iconomapa {
+    grid-area: iconomapa;
+    padding-left: 30px;
+}
+
+#cuenta {
+    grid-area: cuenta;
+}
+
+#carrito {
+    grid-area: carrito;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#dowlanding {
+    grid-area: dowlanding;
+    display: grid;
+    grid-template:
+        "logo buscador" / 150px 6fr;
+}
+
+#logo {
+    grid-area: logo;
+    background-image: url(../imagenes/logo.svg);
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#buscador {
+    grid-area: buscador;
+    display: grid;
+    grid-template:
+        "origen destino viajeros raza botoncomenzar"
+        /3fr 3fr 3fr 2fr 1fr;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
