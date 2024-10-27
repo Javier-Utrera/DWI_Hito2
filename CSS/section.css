@@ -10,9 +10,11 @@
 /* ----DESTINOS---- */
 #destinos {
     display: grid;
-    grid-template-columns: minmax(0px, 1fr) repeat(5, minmax(100px, 10%)) minmax(0px, 1fr);
+    grid-template-columns: repeat(5, minmax(100px, 10%));
     gap: 30px;
     position: relative;
+    justify-content: center;
+    
 }
 
 .dest {
@@ -112,8 +114,15 @@
 
 #servicios .contenedor {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+#servicios .contenedor .columnacontenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* ----EQUIPO---- */
@@ -121,8 +130,8 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
 
 }
 
@@ -152,8 +161,10 @@
 }
 
 .descripcioncabecera {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    font-size: clamp(1rem, 2vw + 1rem, 2.5rem);
+    padding-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .imagencontenedor img {

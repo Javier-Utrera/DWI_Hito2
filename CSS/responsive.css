@@ -7,11 +7,6 @@
             "botoncomenzar botoncomenzar";
     }
 
-    #destino {
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-
     #viajeros {
         border-left: outset;
         border-top-left-radius: 10px;
@@ -31,6 +26,40 @@
         height: 30px;
     }
 
+
+    #destinos {
+        display: grid;
+        grid-template-columns: repeat(1,80%);
+        grid-template-rows: repeat(5,1fr);
+        position: relative;
+        justify-content: center;
+        gap: 5px;
+        
+    }
+    .dest img {
+        height: 130px;
+        object-fit: cover;
+        border-radius: 200px;
+        box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.377);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .dest{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    #comarca,#rivendell,#gondor,#moria,#mordor {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #comarca{margin-left: 10%;}
+    #rivendell{margin-left: -10%;}
+    #gondor{margin-left: 5%;}
+    #moria{margin-left: -5%;}
+    #mordor{margin-left: 10%;}
+
     #equipo .contenedor {
         grid-template-columns: repeat(2, 1fr); /* Una columna en dispositivos pequeños */
         grid-template-rows: repeat(2, 1fr); /* Fila automática */
@@ -42,7 +71,8 @@
         display: none;
     }
     .imagencontenedor img {
-        width: 40%; 
+        width: 40%;
+        border-radius: 5px; 
     }
     .descripcioncontenedor{ 
         border-top: 1px solid;
