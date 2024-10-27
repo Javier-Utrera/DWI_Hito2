@@ -1,0 +1,35 @@
+footer {
+    color: #ecf0f1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.301);
+}
+
+.footer-section {
+    padding: 10px;
+}
+
+.footer-section h2 {
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+}
+
+.footer-section p, .footer-section a {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.social-icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+    color: #ecf0f1;
+}

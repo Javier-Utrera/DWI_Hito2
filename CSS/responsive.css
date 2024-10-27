@@ -1,3 +1,4 @@
+/* responsive.css */
 @media (max-width: 720px) {
     #buscador {
         grid-template:
@@ -28,5 +29,23 @@
 
     #botoncomenzar {
         height: 30px;
+    }
+
+    #equipo .contenedor {
+        grid-template-columns: repeat(2, 1fr); /* Una columna en dispositivos pequeños */
+        grid-template-rows: repeat(2, 1fr); /* Fila automática */
+    }
+    #puesto-equipo{ 
+        display: none;
+    }
+    #iconosdescripcion{
+        display: none;
+    }
+    .imagencontenedor img {
+        width: 40%; 
+    }
+    .descripcioncontenedor{ 
+        border-top: 1px solid;
+        border-radius: 10px;
     }
 }

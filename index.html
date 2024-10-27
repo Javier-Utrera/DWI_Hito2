@@ -5,83 +5,411 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <link rel="stylesheet" href="CSS/estructura.css">
     <link rel="stylesheet" href="CSS/header.css">
     <link rel="stylesheet" href="CSS/buscadorheader.css">
     <link rel="stylesheet" href="CSS/landing.css">
     <link rel="stylesheet" href="CSS/nav.css">
-    <link rel="stylesheet" href="CSS/responsive.css">
     <link rel="stylesheet" href="CSS/section.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
     <title>Index</title>
 </head>
 
 <body>
     <div class="cuerpo">
-            <header>
-                    <div id="logo"></div>
-                    <div id="buscador">
-                        <input type="text" placeholder="Origen" id="origen" />
-                        <input type="text" placeholder="Destino" id="destino" />
-                        <input type="text" placeholder="Viajeros" id="viajeros" />
-                        <select id="raza">
-                            <option value="">Raza</option>
-                            <option value="">Humano</option>
-                            <option value="">Elfo</option>
-                            <option value="">Enano</option>
-                        </select>
-                        <button type="submit" id="botoncomenzar">Comenzar viaje</button>
-                    </div>
-            </header>
-            <nav>
-                <div class="menu" id="blog">
-                    <a href="#">Blog</a>
+        <header>
+            <div id="logo"></div>
+            <div id="buscador">
+                <input type="text" placeholder="Origen" id="origen" />
+                <input type="text" placeholder="Destino" id="destino" />
+                <input type="text" placeholder="Viajeros" id="viajeros" />
+                <select id="raza">
+                    <option value="">Raza</option>
+                    <option value="">Humano</option>
+                    <option value="">Elfo</option>
+                    <option value="">Enano</option>
+                </select>
+                <button type="submit" id="botoncomenzar">Comenzar viaje</button>
+            </div>
+        </header>
+        <nav>
+            <div class="menu" id="blog">
+                <a href="#">Blog</a>
+            </div>
+            <div class="menu" id="viajes">
+                <a href="#">Viajes</a>
+                <div class="submenu">
+                    <a href="#">Destinos</a>
+                    <a href="#">Consejos</a>
                 </div>
-                <div class="menu" id="viajes">
-                    <a href="#">Viajes</a>
-                    <div class="submenu">
-                        <a href="#">Destinos</a>
-                        <a href="#">Consejos</a>
-                    </div>
+            </div>
+            <div class="menu" id="mapa">
+                <a href="#">Mapa</a>
+                <div class="submenu">
+                    <a href="#">Destinos</a>
+                    <a href="#">Consejos</a>
                 </div>
-                <div class="menu" id="mapa">
-                    <a href="#">Mapa</a>
-                    <div class="submenu">
-                        <a href="#">Destinos</a>
-                        <a href="#">Consejos</a>
-                    </div>
+            </div>
+            <div class="menu" id="tienda">
+                <a href="#">Tienda</a>
+                <div class="submenu">
+                    <a href="#">Ofertas</a>
+                    <a href="#">Categorias</a>
+                    <a href="#">Destacados</a>
                 </div>
-                <div class="menu" id="tienda">
-                    <a href="#">Tienda</a>
-                    <div class="submenu">
-                        <a href="#">Ofertas</a>
-                        <a href="#">Categorias</a>
-                        <a href="#">Destacados</a>
-                    </div>
-                </div>
-                <div id="cuenta">
-                    <span class="material-symbols-rounded">account_circle</span>
-                </div>
-                <div id="carrito">
-                    <span class="material-symbols-rounded">shopping_cart</span>
-                </div>
-                <div class="menu" id="idioma"><span class="material-symbols-rounded">translate</span></div>
-            </nav>
-            <div class="landing"></div>
+            </div>
+            <div class="menu" id="cuenta">
+                <span class="material-symbols-rounded">account_circle</span>
+            </div>
+            <div class="menu" id="carrito">
+                <span class="material-symbols-rounded">shopping_cart</span>
+            </div>
+            <div class="menu" id="idioma"><span class="material-symbols-rounded">translate</span></div>
+        </nav>
+        <div class="landing"></div>
         <section>
             <div id="destinos">
                 <div class="dest"></div>
-                <div class="dest"><img id="comarca" src="imagenes/comarca.webp" alt="La comarca"></div>
-                <div class="dest"><img id="rivendell" src="imagenes/rivendell.jpg" alt="La comarca"></div>
-                <div class="dest"><img id="gondor" src="imagenes/gondor.jpg" alt="La comarca"></div>
-                <div class="dest"><img id="moria" src="imagenes/erebor.webp" alt="La comarca"></div>
-                <div class="dest"><img id="mordor" src="imagenes/mordor.webp" alt="La comarca"></div>
+                <div class="dest">
+                    <img id="comarca" src="imagenes/comarca.webp" alt="La comarca">
+                    <div class="descripciondestino" id="descrcomarca">
+                        <p>Hobbiton es un apacible pueblo en la Comarca, hogar de los hobbits y famoso por sus verdes
+                            colinas y casas en las colinas.
+                            Es un lugar de vida sencilla, festiva, y rodeado de naturaleza, ideal para quienes buscan
+                            paz y tranquilidad.</p>
+                    </div>
+                </div>
+                <div class="dest">
+                    <img id="rivendell" src="imagenes/rivendell.jpg" alt="Rivendell">
+                    <div class="descripciondestino" id="descrrivendell">
+                        <p>Rivendell es un refugio elfo escondido entre montañas, conocido por su serenidad, belleza
+                            natural y sabiduría ancestral.
+                            Hogar de Elrond, es un lugar de descanso y consejo, donde viajeros encuentran paz y
+                            conocimiento en un ambiente de bosques y cascadas místicas.</p>
+                    </div>
+                </div>
+                <div class="dest">
+                    <img id="gondor" src="imagenes/gondor.jpg" alt="La comarca">
+                    <div class="descripciondestino" id="descrgondor">
+                        <p>Gondor es un antiguo reino de hombres en la Tierra Media, conocido por su rica historia y su
+                            arquitectura imponente.
+                            Su capital, Minas Tirith, se alza en varias terrazas, simbolizando la resistencia y la
+                            nobleza de su pueblo. Gondor
+                            juega un papel crucial en la lucha contra las fuerzas de Sauron, destacándose por su
+                            valentía y heroísmo durante la
+                            Guerra del Anillo. Este reino es un símbolo de esperanza y fortaleza en tiempos oscuros.</p>
+                    </div>
+                </div>
+                <div class="dest">
+                    <img id="moria" src="imagenes/erebor.webp" alt="La comarca">
+                    <div class="descripciondestino" id="descrmoria">
+                        <p>Erebor, también conocido como la Montaña Solitaria, es una imponente montaña ubicada en el
+                            norte de la Tierra Media,
+                            famosa por ser el hogar de los enanos liderados por Thorin Escudo de Roble. En su interior,
+                            Erebor alberga vastos salones y tesoros,
+                            incluidos los legendarios y valiosos minerales. La montaña fue originalmente un próspero
+                            reino enano, pero fue conquistada por Smaug,
+                            el dragón, quien robó su riqueza y forzó a los enanos a huir. La historia de Erebor es una
+                            mezcla de valentía, codicia y redención,
+                            marcada por la búsqueda de los enanos para recuperar su hogar y su tesoro.</p>
+                    </div>
+                </div>
+                <div class="dest">
+                    <img id="mordor" src="imagenes/mordor.webp" alt="La comarca">
+                    <div class="descripciondestino" id="descrmordor">
+                        <p>Mordor es una oscura y desolada tierra en el sureste de la Tierra Media, famosa por ser el
+                            reino de Sauron, el Señor Oscuro.
+                            Rodeada por las montañas de Ephel Dúath y los Montes de las Sombras, Mordor es un lugar de
+                            gran maldad y peligro. Su paisaje
+                            está marcado por volcanes, especialmente el Monte del Destino, donde se forjó el Anillo
+                            Único. Mordor es conocido por su atmósfera
+                            opresiva, con cielos nublados y un ambiente hostil, habitado por orcos, trolls y otras
+                            criaturas malignas. Es el escenario de la
+                            lucha final entre el bien y el mal en "El Señor de los Anillos".</p>
+                    </div>
+                </div>
                 <div class="dest"></div>
             </div>
-            <div id="servicios"></div>
-            <div id="equipo"></div>
-            <div id="testimonios"></div>
+            <div id="servicios">
+                <div class="cabecera">
+                    <h2 class="titulocabecera">Aventuras y Servicios Legendarios</h2>
+                    <h1 class="descripcioncabecera">
+                        Ofrecemos recorridos por paisajes
+                        impresionantes y experiencias únicas que te conectarán con las leyendas de antaño.
+                        ¡Únete a nosotros y vive una aventura inolvidable!
+                    </h1>
+                </div>
+                <div class="contenedor">
+                    <div class="columnacontenedor"></div>
+                    <div class="columnacontenedor">
+                        <div class="columnacentrada">
+                            <div class="imagencontenedor">
+                                <img src="imagenes/equipo.jpg" alt="Equipo 1" loading="lazy">
+                            </div>
+                            <div class="descripcioncontenedor">
+                                <div class="subdescripcion">Servicio 1</div>
+                                <div class="subdescripcion">Descripcion</div>
+                                <div class="subdescripcion">
+                                    <button type="submit" id="botoncomenzar">Saber mas</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columnacontenedor">
+                        <div class="columnacentrada">
+                            <div class="imagencontenedor">
+                                <img src="imagenes/equipo.jpg" alt="Equipo 1" loading="lazy">
+                            </div>
+                            <div class="descripcioncontenedor">
+                                <div class="subdescripcion">Aragorn</div>
+                                <div class="subdescripcion">Montaraz</div>
+                                <div class="subdescripcion">
+                                    <span class="material-symbols-rounded">account_circle</span>
+                                    <span class="material-symbols-rounded">account_circle</span>
+                                    <span class="material-symbols-rounded">account_circle</span>
+                                    <span class="material-symbols-rounded">account_circle</span>
+                                </div>
+                                <div class="subdescripcion">
+                                    <button type="submit" id="botoncomenzar">Comenzar viaje</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columnacontenedor">
+                        <div class="columnacentrada">
+                            <div class="imagencontenedor">
+                                <img src="imagenes/equipo.jpg" alt="Equipo 1" loading="lazy">
+                            </div>
+                            <div class="descripcioncontenedor">
+                                <div class="subdescripcion">Aragorn</div>
+                                <div class="subdescripcion">Montaraz</div>
+                                <div class="subdescripcion">
+                                    <span class="material-symbols-rounded">account_circle</span>
+                                    <span class="material-symbols-rounded">account_circle</span>
+                                    <span class="material-symbols-rounded">account_circle</span>
+                                    <span class="material-symbols-rounded">account_circle</span>
+                                </div>
+                                <div class="subdescripcion">
+                                    <button type="submit" id="botoncomenzar">Comenzar viaje</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columnacontenedor">
+                        <div class="columnacentrada">
+                            <div class="imagencontenedor">
+                                <img src="imagenes/equipo.jpg" alt="Equipo 1" loading="lazy">
+                            </div>
+                            <div class="descripcioncontenedor">
+                                <div class="subdescripcion">Aragorn</div>
+                                <div class="subdescripcion">Montaraz</div>
+                                <div class="subdescripcion">
+                                    <span class="material-symbols-rounded">account_circle</span>
+                                    <span class="material-symbols-rounded">account_circle</span>
+                                    <span class="material-symbols-rounded">account_circle</span>
+                                    <span class="material-symbols-rounded">account_circle</span>
+                                </div>
+                                <div class="subdescripcion">
+                                    <button type="submit" id="botoncomenzar">Comenzar viaje</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columnacontenedor"></div>
+                </div>
+            </div>
+            <div id="equipo">
+                <div class="cabecera">
+                    <h2 class="titulocabecera">La Hermandad que Guía tus Aventuras en la Tierra Media</h2>
+                    <h1 class="descripcioncabecera">
+                        Somos una hermandad de guías y exploradores de toda la Tierra Media. ¡Prepárate para descubrir
+                        lo inesperado!
+                    </h1>
+                </div>
+                <div class="contenedor">
+                    <div class="columnacontenedor">
+                        <div class="columnacentrada">
+                            <div class="imagencontenedor">
+                                <img src="imagenes/equipo1.jpg" alt="Equipo 1" loading="lazy">
+                            </div>
+                            <div class="descripcioncontenedor">
+                                <div class="subdescripcion" id="nombre-equipo">Aldric el Errante</div>
+                                <div class="subdescripcion" id="puesto-equipo">Explorador y guía de territorios
+                                    inexplorados.</div>
+                                <div class="subdescripcion" id="iconosdescripcion">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </div>
+                                <div class="subdescripcion">
+                                    <button type="button" id="botoncomenzar">Saber mas...</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="columnacontenedor">
+                        <div class="columnacentrada">
+                            <div class="imagencontenedor">
+                                <img src="imagenes/equipo3.jpg" alt="Equipo 3" loading="lazy">
+                            </div>
+                            <div class="descripcioncontenedor">
+                                <div class="subdescripcion" id="nombre-equipo">Lirael Silvanwind</div>
+                                <div class="subdescripcion" id="puesto-equipo">Consejera de la naturaleza y sanadora.
+                                </div>
+                                <div class="subdescripcion" id="iconosdescripcion">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </div>
+                                <div class="subdescripcion">
+                                    <button type="button" id="botoncomenzar">Saber mas...</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columnacontenedor">
+                        <div class="columnacentrada">
+                            <div class="imagencontenedor">
+                                <img src="imagenes/equipo4.jpg" alt="Equipo 4" loading="lazy">
+                            </div>
+                            <div class="descripcioncontenedor">
+                                <div class="subdescripcion" id="nombre-equipo">Kaela la Valiente</div>
+                                <div class="subdescripcion" id="puesto-equipo">Guardiana del grupo y especialista en
+                                    logística.</div>
+                                <div class="subdescripcion" id="iconosdescripcion">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </div>
+                                <div class="subdescripcion">
+                                    <button type="button" id="botoncomenzar">Saber mas...</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columnacontenedor">
+                        <div class="columnacentrada">
+                            <div class="imagencontenedor">
+                                <img src="imagenes/equipo5.jpg" alt="Equipo 5" loading="lazy">
+                            </div>
+                            <div class="descripcioncontenedor">
+                                <div class="subdescripcion" id="nombre-equipo">Durin Barbalarga</div>
+                                <div class="subdescripcion" id="puesto-equipo">Estratega y maestro de armas.</div>
+                                <div class="subdescripcion" id="iconosdescripcion">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </div>
+                                <div class="subdescripcion">
+                                    <button type="button" id="botoncomenzar">Saber mas...</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="testimonios">
+                <div class="cabecera">
+                    <h2 class="titulocabecera">La Hermandad que Guía tus Aventuras en la Tierra Media</h2>
+                    <h1 class="descripcioncabecera">
+                        Somos una hermandad de guías y exploradores de toda la Tierra Media. ¡Prepárate para descubrir
+                        lo inesperado!
+                    </h1>
+                </div>
+                <div class="contenedor">
+                    <div class="columnacontenedor"></div>
+                    <div class="columnacontenedor">
+                        <div class="columnacentrada">
+                            <div class="imagencontenedor">
+                                <img src="imagenes/equipo.jpg" alt="Equipo 1" loading="lazy">
+                            </div>
+                            <div class="descripcioncontenedor">
+                                <div class="subdescripcion">Aragorn</div>
+                                <div class="subdescripcion">Montaraz</div>
+                                <div class="subdescripcion">
+                                    <span class="material-symbols-rounded">account_circle</span>
+                                    <span class="material-symbols-rounded">account_circle</span>
+                                    <span class="material-symbols-rounded">account_circle</span>
+                                    <span class="material-symbols-rounded">account_circle</span>
+                                </div>
+                                <div class="subdescripcion">
+                                    <button type="submit" id="botoncomenzar">Comenzar viaje</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columnacontenedor">
+                        <div class="columnacentrada">
+                            <div class="imagencontenedor">
+                                <img src="imagenes/equipo.jpg" alt="Equipo 1" loading="lazy">
+                            </div>
+                            <div class="descripcioncontenedor">
+                                <div class="subdescripcion">Aragorn</div>
+                                <div class="subdescripcion">Montaraz</div>
+                                <div class="subdescripcion">
+                                    <span class="material-symbols-rounded">account_circle</span>
+                                    <span class="material-symbols-rounded">account_circle</span>
+                                    <span class="material-symbols-rounded">account_circle</span>
+                                    <span class="material-symbols-rounded">account_circle</span>
+                                </div>
+                                <div class="subdescripcion">
+                                    <button type="submit" id="botoncomenzar">Comenzar viaje</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columnacontenedor">
+                        <div class="columnacentrada">
+                            <div class="imagencontenedor">
+                                <img src="imagenes/equipo.jpg" alt="Equipo 1" loading="lazy">
+                            </div>
+                            <div class="descripcioncontenedor">
+                                <div class="subdescripcion">Aragorn</div>
+                                <div class="subdescripcion">Montaraz</div>
+                                <div class="subdescripcion">
+                                    <span class="material-symbols-rounded">account_circle</span>
+                                    <span class="material-symbols-rounded">account_circle</span>
+                                    <span class="material-symbols-rounded">account_circle</span>
+                                    <span class="material-symbols-rounded">account_circle</span>
+                                </div>
+                                <div class="subdescripcion">
+                                    <button type="submit" id="botoncomenzar">Comenzar viaje</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columnacontenedor"></div>
+                </div>
+            </div>
         </section>
-        <footer></footer>
+        <footer>
+                <div class="footer-section">
+                    <h2>Contacto</h2>
+                    <p>Email: contacto@tuempresa.com</p>
+                    <p>Teléfono: +123 456 7890</p>
+                    <p>Dirección: Calle Ficticia 123, Ciudad, País</p>
+                </div>
+                <div class="footer-section">
+                    <h2>Redes Sociales</h2>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="footer-section">
+                    <h2>Enlaces Rápidos</h2>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+        </footer>
     </div>
 </body>
 
