@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #4A7C30;
+    background: linear-gradient(180deg, #4A7C30, #2F4F2A);
 }
 
 .cuerpo {
@@ -11,7 +11,7 @@ body {
         "landing"
         "section"
         "footer";
-    grid-template-rows: 160px 50px 500px auto 250px;
+    grid-template-rows: 160px 50px 500px auto auto;
 }
 
 header {
@@ -29,7 +29,7 @@ nav {
 }
 
 section {   
-    margin-top: 20px;
+    padding-top: 30px;
     grid-area: section;
     display: grid;
     gap: 25px;
@@ -38,11 +38,11 @@ section {
         "servicios"
         "equipo"
         "testimonios";
-    grid-template-rows: repeat(4, 800px);
+    grid-template-rows: 800px repeat(3, auto);
     z-index: 10;
 }
 
 footer {
+    margin-top: 20px;
     grid-area: footer;
-    background-color: #8B5B29;
 }

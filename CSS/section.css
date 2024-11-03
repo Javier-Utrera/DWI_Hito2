@@ -3,8 +3,10 @@
 #servicios,
 #equipo,
 #testimonios {
-    background-color: antiquewhite;
-    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.301);
+    background-color: #F0E6D2;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 /* ----DESTINOS---- */
@@ -108,6 +110,7 @@
 #testimonios {
     display: grid;
     grid-template-rows: auto 1fr;
+    padding-bottom: 20px;
 }
 
 /* ----SERVICIOS---- */
@@ -133,13 +136,6 @@
     padding-left: 15%;
     padding-right: 15%;
 
-}
-
-/* ---TESTIMONIOS--- */
-#testimonios .contenedor {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
 }
 
 /* ---------- */
@@ -172,6 +168,8 @@
     object-fit: cover;
     box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .imagencontenedor img:hover {
@@ -191,7 +189,7 @@
     border-bottom-right-radius: 10px;
     padding: 10px;
     gap: 10px;
-    background-color: rgba(255, 255, 255, 0.336);
+    background-color: #f0f4f8;
 }
 
 #iconosdescripcion {
@@ -201,6 +199,7 @@
 }
 
 #nombre-equipo {
+    padding-top: 5px;
     font-size: 1.5em;
     color: #3e5f4f;
     font-weight: bold;
@@ -216,4 +215,69 @@
 
 #iconosdescripcion {
     font-size: 1.3em;
+}
+
+/* ---TESTIMONIOS--- */
+#testimonios .contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.comentario-container {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    gap: 15px;
+    background-color: #f0f4f8;
+    border-left: 4px solid #c19a6b;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.1s ease;
+}
+
+.comentario-container:hover {
+    background-color: #f0f4f8;
+    border-left: none;
+    border-top: 4px solid #3e5f4f;
+    padding: 20px;
+    transform: rotate(-1deg);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.comentario-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+
+.comentario-container:hover img {
+    transform: translateY(-3px);
+}
+
+.comentario-titulo {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin: 5px 0;
+}
+
+.comentario-texto {
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.4;
+}
+
+.comentario-iconos {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+    font-size: 1.2em;
+    color: #3e5f4f;
 }

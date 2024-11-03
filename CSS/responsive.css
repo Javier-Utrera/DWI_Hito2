@@ -60,9 +60,26 @@
     #moria{margin-left: -5%;}
     #mordor{margin-left: 10%;}
 
+    #descrcomarca {left: 20px;}   
+    #descrrivendell {left: 0px;}    
+    #descrgondor {left: 0px;}   
+    #descrmoria {left: 0px;}   
+    #descrmordor {
+        top:-200px;
+        left: 0px;
+    }
+
     #equipo .contenedor {
-        grid-template-columns: repeat(2, 1fr); /* Una columna en dispositivos pequeños */
-        grid-template-rows: repeat(2, 1fr); /* Fila automática */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    #servicios .contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    #testimonios .contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
     }
     #puesto-equipo{ 
         display: none;
@@ -71,11 +88,16 @@
         display: none;
     }
     .imagencontenedor img {
-        width: 40%;
+        width: 100px;
         border-radius: 5px; 
     }
     .descripcioncontenedor{ 
         border-top: 1px solid;
         border-radius: 10px;
     }
+/* FOOTER */
+.footer-contenido {
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
 }
